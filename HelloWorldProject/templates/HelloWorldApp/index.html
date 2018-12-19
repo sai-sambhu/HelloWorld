@@ -1,4 +1,799 @@
-<title>First APP</title>
-<h1>Hello World in html</h1><br>
+<!DOCTYPE HTML>
+<html>
+<head>
 
-{{insert_me}}
+
+
+
+
+<title>CSI Tech Hub ||MGIT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script> 
+  
+  
+  
+  
+  
+  
+  
+  
+ <style>
+ 
+ 
+ 
+ 
+ 
+ /* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+ 
+ 
+ 
+ 		
+		<!--footer{
+			position: absolute;
+			margin-top: 300px;
+		}
+		footer a{
+			color: #F5E53A;
+		}
+		footer img{
+			width: 32px;
+			height: 32px;
+			vertical-align: middle;
+		}-->
+
+
+
+.ShowCaro{
+display: none;
+}
+header{
+position: absolute;
+top: 0;
+left: 0;
+padding: 0 100px;
+background: pink;
+width: 100%;
+box-sizing: border-box;
+
+position: fixed;
+z-index:99;
+top: 0px;
+
+
+}
+header .logo{
+height: 100px;
+line-height: 50px;
+float: left;
+}
+
+header nav{
+float: right;
+}
+header nav ul{
+margin: 0;
+padding 0;
+display: flex;
+}
+header nav ul li{
+list-style: none;
+}
+header nav ul li a{
+height: 100px;
+line-height: 100px;
+
+padding: 15px;
+
+color: black;
+text-decoration: none;
+display: block;
+}
+header nav ul li a#NavibarItems:hover,
+header nav ul li a.active{
+color: black;
+background: yellow;
+text-transform: uppercase;
+transition: 0.8s all;
+}
+.menu-toggle
+{
+color: black;
+float: right;
+line-height: 50px;
+font-size: 24px;
+cursor: pointer;
+display: none;
+}
+header .logo1{
+display: none;
+}
+		
+ <!--
+ body{
+background-image: url("Images/BackGround6.jpg");
+
+   
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+padding: 0;
+margin: 0px;
+<!--border: 0px;
+padding-top: 70px
+->
+}
+<!--
+
+position: fixed;
+z-index:99;
+top: 0px;
+->
+
+header{
+
+top: 0;
+left: 0;
+padding: 0 100px;
+background: pink;
+width: 100%;
+box-sizing: border-box;
+position: fixed;
+z-index:99;
+top: 0px;
+}
+header .logo{
+height: 100px;
+line-height: 50px;
+float: left;
+
+}
+header .logo1{
+display: none;
+}
+header nav{
+float: right;
+}
+header nav ul{
+margin: 0;
+padding 0;
+display: flex;
+}
+header nav ul li{
+list-style: none;
+}
+header nav ul li a{
+height: 100px;
+line-height: 100px;
+padding : 0 10px;
+color: black;
+text-decoration: none;
+display: block;
+}
+header nav ul li a#NavibarItems:hover,
+header nav ul li a.active{
+color: black;
+background: yellow;
+}
+.menu-toggle
+{
+color: black;
+float: rigth;
+line-height: 50px;
+font-size: 24px;
+cursor: pointer;
+display: none;
+}
+
+-->
+@media(max-width: 960px)
+{
+
+.ShowCaro{
+display: block;
+}
+
+
+		body{
+background-image: url("Imagems/BackGround6.jpg");
+
+   
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+<!--padding: 0;
+margin: 0px;
+border: 0px;
+-->
+top: 150px;
+
+}
+header
+{
+padding: 0 20px;
+position: absolute;
+}
+.menu-toggle
+{
+display: block;
+}
+header nav{
+<!--display: none;-->
+position: absolute;
+width: 100%;
+height: calc(100vh - 50ps);
+background: #333;
+top: 50px;
+left: -100%;
+transition: 0.8s;
+float: left;
+
+}
+header nav.active
+{
+left: 0;
+}
+
+header nav ul
+{
+display: block;
+text-align: center;
+
+}
+header nav ul li{
+height: 100px;
+}
+header nav ul li a{
+border-bottom: 1px solid rgba(0,0,0,2);
+
+
+}
+}
+
+
+<!--.mySlides {display:none;}
+-->
+
+
+
+
+</style>
+
+<meta name="veiwport" content="width=device-width, initial-scale=1.p0">
+  <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+
+<div id="navbar"></nav>
+<header>
+		      <div class="logo1"><img id="img1GO" src="CSILogo.jpg"><img id="img2GO" src="LOGO.jpg"></div>
+		     <div class="logo"><canvas id="canvas"></canvas></div>
+			 <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			 <nav class="active">
+			 	   
+			      <ul>
+					  <li><a href="#navbar" id="NavibarItems" calss="active">Home</a></li>
+					  <li><a href="#AboutUs" id="NavibarItems">AboutUs</a></li>
+					  <li><a href="#CSIStudentsChapter" id="NavibarItems">Events</a></li>
+					  <li><a href="#workshop" id="NavibarItems">Workshops</a></li>
+					  <li><a href="#registrations" id="NavibarItems">Registrations</a></li>
+					  <li><a href="#contactUs" id="NavibarItems">Contact Us</a></li>
+					</ul> 
+              </nav>
+		
+        </header>		  
+
+<script type="text/javascript">
+var img1 = document.getElementById('img1GO');
+var img2 = document.getElementById('img2GO');
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+
+canvas.width = img1.width+img2.width;
+canvas.height = img1.height;
+
+context.globalAlpha = 1.0;
+context.drawImage(img1, 0, 0);
+context.globalAlpha = 10;
+context.drawImage(img2, 280, 0);
+</script>
+
+
+
+<body>
+<br><br><br><br><br><br>
+<div class="ShowCaro"><p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p></div>
+<div class="container">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="CarosaulImg/img1.jpg" alt="img1" style="width:100%;">
+        <div class="carousel-caption">
+         <!-- <h1>CSI Technical Fest</h1>
+          <p>Events by MGIT</p>-->
+        </div>
+      </div>
+
+      
+	  
+	  <div class="item">
+        <img src="CarosaulImg/img3.jpg" alt="img2" style="width:100%;">
+        <div class="carousel-caption">
+          <!--<h2>CSI Technical Fest</h2>
+          <p>Events by MGIT</p>-->
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <img src="CarosaulImg/img4.jpg" alt="img2" style="width:100%;">
+        <div class="carousel-caption">
+          <!--<h2>CSI Technical Fest</h2>
+          <p>Events by MGIT</p>-->
+        </div>
+      </div>
+    
+      
+  
+  <div class="item">
+        <img src="CarosaulImg/img6.jpg" alt="img3" style="width:100%;">
+        <div class="carousel-caption">
+         <!-- <h3>CSI Technical Fest</h3>
+          <p>Workshops by MGIT</p>-->
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+	  
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+</div>
+
+
+
+<div id="AboutUs"></div><br><br><br><br><br>
+<h4><b><font color=pink><center>About Us</center></font></b></h4>
+
+<div class="w3-content" style="max-width:1400px">
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="Images/BackGround.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Computer Society of India (CSI)</h3>
+      <h5>The largest body of computer professionals in India, <span class="w3-opacity">Oct,2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p id="CSIPara"><span style="font-weight:normal">Computer Society of India (CSI) started on 6th March, 1965 by a few computer professionals and has now grown to be the
+national body representing computer professionals. Since its inception, CSI has been
+instrumental in guiding the Indian IT industry down the right path.</span><div id="CSIStudentsChapter"></div><span style="font-weight:normal">
+Computer Society of India regularly organizes workshops, seminars and technical talks for the
+benefits of students and IT professionals which ultimately help them in their careers.</span>
+
+<div id="CSIDiv" style="display:none;">
+<span style="font-weight:normal"><p>
+The Society also encourages and assists professionals to maintain integrity and competence of the profession
+and fosters a sense of partnership amongst members. CSI has 72 chapters across India, 511
+student branches, and more than 115,000 members including India’s most famous IT industry
+leaders, brilliant scientists and dedicated academicians.
+Some of benefits of CSI are:-
+
+<ul>
+<li>Appreciation Certificate for performance excellence and Industry recognized CSI
+certification opportunities.</li>
+<li>Access to journals and CSI knowledge portal.</li>
+<li>Interaction and collaboration with distinguished academicians, researchers and
+practitioners</li>
+<li>Eligibility to be nominated for the best Student paper in CSI communications</li>
+<li>Opportunity to interact with Industry professionals and chalk out a career path</li></ul></span></p></div></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+		
+          <p><input tpye="button" class="w3-button w3-padding-large w3-white w3-border" onclick="CSIButtonClick()" id="CSIButton" value="READ More>>" width=50px></p>
+        </div>
+        <!--<div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        
+		</div>-->
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+<h4><b><font color=pink>&nbsp;&nbsp;&nbsp;&nbsp;Events</font></b></h4>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="Images/BackGround3.jpg" height=500px alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>CSI Students’ Chapter, MGIT</b></h3>
+      <h5>inaugurating the National Level Technical Symposium,<span class="w3-opacity">Oct,2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><span style="font-weight:normal">The CSI Chapter, MGIT with great erudition, spotlights the latest and imminent technology from across the globe. TechAstra will enhance and enrich the updated technical knowledge required by industry and helps the students to interact with various IT industry leaders, scientists and dedicated academicians. We are committed to the advancement of research, development, training and education in the School of Computing under CSI and percolate benefits and knowledge. The technical events, Ideathon and ProjectExpo are conducted. The workshops on Cyber Security & Malware Analysis and Python are organised.</span></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><!--<button class="w3-button w3-padding-large w3-white w3-border" >Read MORE</button>--></p>
+        </div>
+        <!--<div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>-->
+      </div>
+    </div>
+	
+  </div>
+  
+<!-- END BLOG ENTRIES -->
+
+<hr>
+
+<div class="w3-card-4 w3-margin w3-white">
+  <img src="Images/BackGround1.jpg" height=500px alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>ProjectExpo, MGIT</b></h3>
+      <h5>Presenting of Projects of Alumnus,<span class="w3-opacity">2017</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <span style="font-weight:normal"><p>The objective of ProjectExpo is to make the students learn from their seniors on:  
+<ul>	  
+        <li>Factors influenced/considered in selecting a project </li>
+        <li>How Technical and infrastructure related challenges were resolved?</li>
+        <li>How did it help them in campus placements or interviews?</li>
+        <li>In what way the experience gained from this project helped them to get job? </li>
+        <li>Criticality of presentation skills matching to the worth of the project executed</li> 
+        <li>How the team work and their interaction with faculty was strategized</li>  
+</ul>
+The best among all the projects will be awarded attractive cash prize.</p></span>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><!--<button class="w3-button w3-padding-large w3-white w3-border" >Read MORE</button>--></p>
+        </div>
+        <!--<div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>-->
+      </div>
+    </div>
+	
+  </div>
+  
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="Images/BackGround7.jpg" height=500px alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Ideathon, MGIT</b></h3>
+      <h5>Presenting Ideathon,<span class="w3-opacity">2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+     <span style="font-weight:normal"> <p>Ideathon' provides a platform for students to express their innovative technical ideas. These ideas can be showcased in front of the various IT Professionals, other eminent personalities who can nurture the participant’s idea to make it into a reality. The best ideas will be rewarded.<br><br>No restrictions on presentation format. Maximum duration time for each participant to present his idea is 3 minutes.<br><br>Top 3 Teams will be awarded.Last date for registration is 24 Oct,2018.</span><p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><!--<button class="w3-button w3-padding-large w3-white w3-border" >Read MORE</button>--></p>
+        </div>
+        <!--<div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>-->
+      </div>
+    </div>
+
+	
+	
+	
+  </div>
+
+  
+  
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="Images/BackGround10.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Prof. M. Rama Bai</b></h4>
+      <span style="font-weight:normal"><p>Convener of the CSI Chapter, MGIT.</p></span>
+    </div>
+  </div><hr>
+  
+  <div class="w3-card w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Faculty Coordinators</b></h4>
+	  <div id="workshop"></div>
+      <span style="font-weight:normal"><p><ul>
+	  <li>Mr.Sk.Irfan Babu</li>
+	  <li>Mr.P. Satya Shekar Varma</li>
+	  <li>Ms.Ch. Lakshmi Kumari</li>
+	  
+	  
+</ul>
+ </p></span>
+
+    </div>
+  </div><hr>
+  <h4><b><font color=pink>Workshops</font></b></h4>
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="Images/BackGround8.png" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Python Workshop</b></h4>
+      <span style="font-weight:normal"><p>The Python workshop is for students who want to learn the basics and applications of a language that has revolutionized the world's most efficient way of building an artificially intelligent environment, has a bigger and better standard library compared to Java/C++ and is statistically the future of programming</p></span>
+    </div>
+  </div>
+  
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="Images/BackGround9.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Cyber Security</b></h4>
+      <span style="font-weight:normal"><p>A workshop on Cyber Security will help the students to learn about various encryption techniques and identify vulnerabilities in networks.<div id="registrations"></div> This workshop will help the student to analyse the digital world.</p></span>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div id="registrations"></div>
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4><b><font color=pink>Registrations</font></b></h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfGfFNL3dAA5aXwFQNTWJJBFCZ6DAJQdLih2M7R-4ZYqxzHiA/viewform')">
+        <img src="Images/BackGround1.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Project Expo</span><br>
+        <span>Technical Event<span>
+      </li>
+      <li class="w3-padding-16" onclick="window.open('http://bit.ly/MGITCSIideathon')"> 
+        <img src="Images/BackGround7.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ideathon</span><br>
+        <span>Technical Event</span>
+      </li> 
+      <li class="w3-padding-16" onclick="window.open('https://goo.gl/forms/6PpcdkUYi5msNKDq1')">
+        <img src="Images/BackGround8.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Python</span><br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Workshop</span>
+      </li> 
+      <li class="w3-padding-16" onclick="window.open('https://goo.gl/forms/6PpcdkUYi5msNKDq1')">
+        <img src="Images/BackGround9.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cyber Security</span><br>
+        <span>Workshop</span>
+      </li> 	  
+      <!--<li class="w3-padding-16 w3-hide-medium w3-hide-small" onclick="window.open('http://www.google.com'
+        <img src="Images/Background5.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li> --> 
+    </ul>
+  </div>
+  
+ <div class="w3-card w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Instructions for students:- </b></h4>
+      <span style="font-weight:normal"><p><ol><li>Registration fee for Ideathon is RS.100 per team</li><li>No Registration fee for Project Expo</li><li>Registration fee for any Workshop for Non-CSI member is RS.350</li><li>Registration fee for any Workshop for CSI member is RS.250</li>
+ <li> All the participants will be given Participant Certificates.</li>
+ 
+ <li> All the participants should carry their ID cards.</li>
+
+</ol>
+ </p></span>
+
+    </div>
+  </div><hr>
+  
+  
+  <div class="w3-card w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Student Executive Board</b></h4>
+      <span style="font-weight:normal"><p><ul>
+	  <li>Praharsh Gowrishetty</li>
+	  <li>Sumanth V.G</li>
+	  <li>Nihal Chandra</li>
+	  <li>Rashi Kaur</li>
+      <li>B.Pragna</li>
+	  <li>S. Naga Sai Lahari</li>
+	  <li>Bhavani Jeane</li>
+	  <li>Kiran Reddy</li>
+	  <li>Krishna Chaitanya</li>
+	  <li>Vijay</li>
+	  <li>Madhav</li>
+	  
+</ul>
+ </p></span>
+
+    </div>
+  </div><hr>
+  
+    <div class="w3-card w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Web Master and Developer</b></h4>
+      <span style="font-weight:normal"><p><ul>
+	  <li>Sai Sambhu Reddy.M</li>
+	  
+</ul>
+ </p></span>
+
+    </div>
+  </div><hr>
+  
+  
+    <div class="w3-card w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <div id="contactUs"></div>
+	  <h4><b>Designer</b></h4>
+      <span style="font-weight:normal"><p><ul>
+	  
+	  <li>K.Sunil Kumar</li>
+	    
+  
+	  
+</ul>
+
+ </p></span>
+
+    </div>
+  </div><hr>
+
+  <div class="w3-card w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Contact Us</b></h4>
+      <span style="font-weight:normal"><p><ul>
+	  <li>Praharsh: 9550024024</li>
+	  
+	  <li>Nihal:     8374421677</li>
+	  <li>Rashi:     9550582250</li>
+      
+	  
+</ul>
+ </p></span>
+
+    </div>
+  </div><hr>
+      
+  
+ 
+  <!-- Labels / tags -->
+ <!-- <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div> -->
+  
+<!-- END Introduction Menu -->
+
+	
+	
+
+
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+ <!-- <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>-->
+  <span style="font-weight:normal"><p>This page  is best veiwed in latest versions of Web Browsers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	<a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a></p>
+  <font size="0.5"><small> Designed and Developed by SAI REDDY.M,MGIT<small> </font></span>
+</footer>
+  
+<script>
+function topFunction() {
+    document.body.scrollTop = 100;
+    document.documentElement.scrollTop = 100;
+}
+
+function CSIButtonClick(){
+var x = document.getElementById("CSIDiv");
+    if (x.style.display === "none") {
+	   document.getElementById("CSIButton").value="Read Less^^";
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+		document.getElementById("CSIButton").value="Read More>>";
+    }
+}
+
+
+</script>
+</body>
+</html>
